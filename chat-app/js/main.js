@@ -26,6 +26,12 @@ function printChat() {
   document.getElementById('chat-window').innerHTML = chatHtml;
 }
 
-
-
-function addMessage(personId) {}
+function addMessage(username) {
+  let text = document.getElementById(username).value;
+  document.getElementById(username).value = '';
+  chat.push({
+    text: text,
+    username: username,
+  });
+  printChat();
+}
