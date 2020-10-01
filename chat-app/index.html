@@ -4,26 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
     <title>Chat App</title>
 </head>
 
 <body>
-    <div>
-        <h1>Chat</h1>
-        <div id="chat-window"></div>
-    </div>
-    <div>
-        <div>
-            <label for="dragonslayer22">dragonslayer22</label>
-            <input id="dragonslayer22">
-            <button onclick="addMessage('dragonslayer22')">Send</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>Chat</h1>
+            </div>
         </div>
-        <div>
-            <label for="fresh4days">fresh4days</label>
-            <input id="fresh4days">
-            <button onclick="addMessage('fresh4days')">Send</button>
+        <div class="row">
+            <div class="col-3">
+                <div>
+                    <h2>Chats</h2>
+                </div>
+            </div>
+            <div class="col-9">
+                <div>
+                    <h2>Current chat</h2>
+                </div>
+                <div>
+                    <div class="border" id="chat-window"></div>
+                </div>
+                <div>
+                    <div>
+                        <label for="dragonslayer22">dragonslayer22</label>
+                        <input id="dragonslayer22">
+                        <button onclick="addMessage('dragonslayer22')">Send</button>
+                    </div>
+                    <div>
+                        <label for="fresh4days">fresh4days</label>
+                        <input id="fresh4days">
+                        <button onclick="addMessage('fresh4days')">Send</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

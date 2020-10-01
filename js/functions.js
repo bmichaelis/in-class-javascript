@@ -73,7 +73,6 @@ function fib(n) {
 let fib9 = fib(9);
 console.log('fib where n = 9 is: ' + fib9);
 
-
 /* 
 
 1 1 0 1 0 0
@@ -83,3 +82,17 @@ console.log('fib where n = 9 is: ' + fib9);
 0 0 0 1 1 1
 
 */
+
+// factorial
+
+// Write a function fact(n) that returns the factorial number of n
+
+function fact(n) {
+  if (n == 1) {
+    return 1;
+  }
+
+  return n * fact(n - 1);
+}
+
+console.log(fact(7));
