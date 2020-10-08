@@ -1,4 +1,6 @@
-function User(username) {
+class User {
+  constructor(username) {
     this.username = username;
-    this.chats = []
+    this.chats = [];
+  }
 }
